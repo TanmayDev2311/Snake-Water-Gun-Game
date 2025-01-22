@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+        body {
+            background: radial-gradient(rgb(176, 209, 225), rgb(104, 104, 174));
+            margin: 0;
+            padding: 0;
+            font-family: "Pixelify Sans", serif;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+        }
+        
+        section {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            /* border: 2px solid black; */
+        }
+
+        ol {
+            /* border: 2px solid yellowgreen; */
+            padding-left: 20px;
+            font-size: 1.4rem;
+        }
+
+        ol li {
+            line-height: 2.5rem;
+        }
+        
+        #play {
+            padding: 17px 30px;
+            font-size: 1.7rem;
+            font-family: "Pixelify Sans";
+            font-weight: bolder;
+            color: #033e12;
+            border-radius: 18px;
+            background: radial-gradient(rgb(238, 238, 246), rgb(214, 58, 58));
+            background: linear-gradient(134deg, #fefafa, #be030370);
+            width: 25%;
+            cursor: pointer;
+        }
+        
+        .playground {
+            min-height: 50vh;
+            min-width: 97vw;
+            background: radial-gradient(rgb(184, 182, 214), rgb(58, 1, 214));
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .choices{
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px 0px;
+        }
+        .option{
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            width: 20%;
+            padding-bottom: 10px;
+            cursor: pointer;
+            /* box-shadow: 0px 0px 20px 3px #a9a6c3; */
+            
+        }
+        .option:active{
+            transform: translateY(5px);
+            /* box-shadow: 0px 8px 12px 4px #a9a6c3; */
+
+        }
+        .snake{
+            background-image: radial-gradient(rgb(150, 205, 110), rgb(11, 103, 5));
+        }
+        .water{
+            background-image: radial-gradient(rgb(149, 235, 225), rgb(5, 103, 88));
+
+        }
+        .gun{
+            background-image: radial-gradient(rgb(193, 182, 136), rgb(78, 83, 7));
+        }
+        .choice{
+            transform: scale(2);
+        }
+        .ai-choice{
+            font-size: 2.5rem;
+            color: white;
+            overflow-y: auto;
+            /* max-height: 100px; */
+        }
+        .instruction{
+            font-size: 2.5rem;
+            color: white;
+        }
+        .announcement{
+            /* max-height: 100px; */
+            overflow-y: auto;
+            font-size: 4rem;
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width : 690px) {
+            html{
+                font-size: 8px;
+            }
+            .choices{
+                /* border: 2px solid red; */
+                /* flex-direction: column; */
+                /* gap: 20px; */
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .option{
+                width: 45%;
+                /* border: 2px solid red; */
+            }
+            .instruction{
+                text-align: center;
+                padding-top: 10px;
+            }
+            main{
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width:435px){
+            .choices{
+                display: grid;
+                grid-template-columns: 1fr;
+                /* align-items: center; */
+                place-items: center;
+                gap: 25px;
+            }
+            .option{
+                border-radius: 50%;
+                /* height: 95%; */
+            }
+            .instruction{
+                text-align: center;
+                padding-top: 10px;
+            }
+            main{
+                text-align: center;
+            }
+            #play{
+                padding-left: 14px;
+            }
+        }

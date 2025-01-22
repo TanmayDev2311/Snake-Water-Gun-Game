@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE WATER GUN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <h1>🐍SNAKE 🌊WATER 🔫GUN</h1>
+
+        <section>
+
+            <h2>Rules & Instructions :</h2>
+            <ol>
+                <li class="rules">You have to choose one from 🐍SNAKE, 🌊WATER or 🔫GUN</li>
+                <li class="rules">🐍SNAKE drinks 🌊WATER, i.e. snake wins & water loses</li>
+                <li class="rules">🌊WATER sinks 🔫GUN, i.e. water wins & gun loses</li>
+                <li class="rules">🔫GUN kills 🐍SNAKE, i.e. gun wins & snake loses</li>
+                <li class="rules">Computer will also randomly choose from these three</li>
+            </ol>
+
+
+        </section>
+
+        <div class="playground">
+                <div class="instruction">Click and choose from the options below : </div>
+                <div class="choices">
+                    <!-- radio buttons for user to select from three elements -->
+                    <div class="snake option" id="snake">
+                        <h3>🐍</h3>
+                    </div>
+
+                    <div class="water option" id="water">
+                        <h3>🌊</h3>
+                    </div>
+
+                    <div class="gun option" id="gun">
+                        <h3>🔫</h3>
+                    </div>
+                </div>
+
+
+            <div class="ai-choice">
+                <!-- <span>Computer Choosed : 🐍</span> -->
+            </div>
+
+            <div class="announcement">
+                <!-- <div class="result">YOU WIN !!!</div>
+                <div class="result">YOU LOSE !</div>
+                <div class="result">IT'S A TIE !</div> -->
+            </div>
+
+            <button id="play">REPLAY</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
